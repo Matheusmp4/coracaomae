@@ -1,0 +1,118 @@
+body{ 
+     width: 98%; 
+     height: 98vh; 
+     display: flex; 
+     justify-content: center; 
+     align-items: center; 
+     background-color: #000000 ; 
+ } 
+  
+ #love{ 
+     color: #e93d3de7; 
+     font-size: x-large; 
+     font-weight: bold; 
+     text-align: right; 
+     padding-left: 100px; 
+     
+  
+ } 
+  
+ @keyframes heart{ 
+     0%{ 
+         transform: rotate(0deg); 
+     } 
+     50%{ 
+         transform: rotate(45deg); 
+         border-top-left-radius:50px; 
+         border-top-right-radius:50px; 
+     } 
+     55%{ 
+         transform: rotate(45deg); scale:1; 
+     } 
+     60%{ 
+         transform: rotate(45deg); scale:1.2; 
+     } 
+     65%{ 
+         transform: rotate(45deg); scale:1; 
+     } 
+     70%{ 
+         transform: rotate(45deg); scale:1.2; 
+     } 
+     75%{ 
+         transform: rotate(45deg); scale:1; 
+     } 
+     80%{ 
+         transform: rotate(45deg); scale:1.2; 
+     } 
+     85%{ 
+         transform: rotate(45deg); scale:1; 
+     } 
+     90%{ 
+         transform: rotate(45deg); scale:1.2; 
+     } 
+     95%{ 
+         transform: rotate(45deg); scale:1; 
+     } 
+     100%{ 
+         transform: rotate(45deg); scale:1.2; 
+         border-top-left-radius:50px; 
+         border-top-right-radius:50px; 
+     } 
+  
+  
+ } 
+  
+ .heart{ 
+     width: 100px; 
+     height: 150px; 
+     position: relative; 
+     background-color: #E93D3D ; 
+     border-radius: 15px; 
+     transition: .5s ease ; 
+     transform-origin: right bottom; 
+     animation: heart 3s ease infinite alternate; 
+ } 
+  
+ .heart:hover{ 
+     transform: rotate(45deg); 
+     transition: .5s ease ; 
+     border-top-left-radius:50px; 
+     border-top-right-radius:50px; 
+ } 
+  
+ @keyframes heart_after{ 
+     0%{ 
+         transform: rotate(0deg); 
+     } 
+     50%{ 
+         transform: rotate(-90deg); translate:100px; 
+         border-top-left-radius:50px; 
+         border-top-right-radius:50px; 
+     } 
+     100%{ 
+         transform: rotate(-90deg); translate:100px; 
+         border-top-left-radius:50px; 
+         border-top-right-radius:50px; 
+     } 
+           
+ } 
+  
+  
+ .heart:after{ 
+     content: "" ; 
+     width: 100px; 
+     height: 150px; 
+     border-radius: 15px; 
+     transform-origin: left bottom; 
+     position: absolute; 
+     background-color: #d61919; 
+     transition: .5s ease; 
+     animation: heart_after 3s ease infinite alternate; 
+  
+ } 
+ .heart:hover:after{  
+     transform: rotate(-90deg); translate: 100px; 
+     transition: .5s ease; 
+     border-top-left-radius:50px; 
+     border-top-right-radius:50px; 
+ }    
